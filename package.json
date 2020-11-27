@@ -7,7 +7,9 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@handsontable/vue": "^5.1.0",
     "core-js": "^3.6.5",
+    "handsontable": "^8.2.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {

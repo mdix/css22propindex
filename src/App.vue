@@ -1,6 +1,14 @@
 <template>
   <div id="app">
-    <hot-table :data="props" :settings="settings"></hot-table>
+    <h1 style="text-transform: uppercase">Sortable CSS 2.2 property list</h1>
+    <p style="width: 90ch">
+      Created from <a href="https://www.w3.org/TR/CSS22/propidx.html">CSS 2.2 property table</a>.<br/>
+      <a href="https://gist.github.com/mdix/bdb6cfd9738c851466848e22a7ef7ca6">This code</a>
+      was used to extract the data from the table linked above.
+      <br /><br />
+      <strong>(i) Click a column to sort asc / desc.</strong>
+    </p>
+    <hot-table :data="props" :settings="settings" />
   </div>
 </template>
 
@@ -61,9 +69,9 @@ export default {
                 150,
                 100,
                 500,
+                200,
                 150,
-                150,
-                150,
+                220,
                 150,
             ],
             search: true,
@@ -105,8 +113,21 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+.handsontable th {
+  text-align: left;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.handsontable td {
+  vertical-align: middle;
+  padding: 5px;
+}
+
+.handsontable tr td:nth-child(2) {
+  text-align: center;
 }
 </style>

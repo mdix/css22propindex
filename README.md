@@ -1,19 +1,7 @@
 # css22propindex
 
-## Project setup
-```
-npm install
-```
+## What
+Just a sortable CSS 2.2 property list created from W3 CSS 2.2 property table (https://www.w3.org/TR/CSS22/propidx.html).
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Live
+https://css-propindex.netlify.app/
